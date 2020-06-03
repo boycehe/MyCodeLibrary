@@ -7,69 +7,122 @@
 //
 
 #include <stdio.h>
-#include "queue.h"
+#include "he_queue.h"
 
 void testArrayQueue(void);
+void teatLinkedQueue(void);
 
 int main(int argc, const char * argv[]) {
     testArrayQueue();
-    
+    teatLinkedQueue();
     return 0;
 }
 
-void testArrayQueue(void){
-   ArrayQueue *queue = createArrayQueue(10);
-   int m1 = 11;
-   addArrayQueue(queue, &m1);
+void teatLinkedQueue(void){
+   HElinkedQueue *queue = heCreateLinkedQueue();
+    int m1 = 11;
+    heAddLinkedQueue(queue, &m1);
     int m2 = 12;
-    addArrayQueue(queue, &m2);
+    heAddLinkedQueue(queue, &m2);
     int m3 = 13;
-    addArrayQueue(queue, &m3);
+    heAddLinkedQueue(queue, &m3);
     int m4 = 14;
-    addArrayQueue(queue, &m4);
+    heAddLinkedQueue(queue, &m4);
     int m5 = 15;
-    addArrayQueue(queue, &m5);
+    heAddLinkedQueue(queue, &m5);
     int m6 = 16;
-    addArrayQueue(queue, &m6);
+    heAddLinkedQueue(queue, &m6);
     int m7 = 17;
-    addArrayQueue(queue, &m7);
+    heAddLinkedQueue(queue, &m7);
     int m8 = 18;
-    addArrayQueue(queue, &m8);
+    heAddLinkedQueue(queue, &m8);
     int m9 = 19;
-    addArrayQueue(queue, &m9);
+    heAddLinkedQueue(queue, &m9);
     int m10 = 20;
-    addArrayQueue(queue, &m10);
+    heAddLinkedQueue(queue, &m10);
     
-    if (isFullArrayQueue(queue) == 1) {
+    int *a1 = (int *)heDeleteLinkedQueue(queue);
+    printf("link->1:%d\n",(int)(*a1));
+    int *a2 = (int *)heDeleteLinkedQueue(queue);
+    printf("link->2:%d\n",(int)(*a2));
+    int *a3 = (int *)heDeleteLinkedQueue(queue);
+    printf("link->3:%d\n",(int)(*a3));
+    int *a4 = (int *)heDeleteLinkedQueue(queue);
+    printf("link->4:%d\n",(int)(*a4));
+    int *a5 = (int *)heDeleteLinkedQueue(queue);
+    printf("link->5:%d\n",(int)(*a5));
+    int *a6 = (int *)heDeleteLinkedQueue(queue);
+    printf("link->6:%d\n",(int)(*a6));
+    int *a7 = (int *)heDeleteLinkedQueue(queue);
+    printf("link->7:%d\n",(int)(*a7));
+    int *a8 = (int *)heDeleteLinkedQueue(queue);
+    printf("link->8:%d\n",(int)(*a8));
+    int *a9 = (int *)heDeleteLinkedQueue(queue);
+    printf("link->9:%d\n",(int)(*a9));
+    int *a10 = (int *)heDeleteLinkedQueue(queue);
+    if (a10 != NULL) {
+        printf("link->10:%d\n",(int)(*a10));
+    }
+    if (heIsEmptyLinkedQueue(queue) == 1) {
+        printf("linked 队列是空的\n");
+    }
+    heFreeLinkedQueue(queue);
+    
+}
+
+void testArrayQueue(void){
+   HEArrayQueue *queue = heCreateArrayQueue(10);
+   int m1 = 11;
+    heAddArrayQueue(queue, &m1);
+    int m2 = 12;
+    heAddArrayQueue(queue, &m2);
+    int m3 = 13;
+    heAddArrayQueue(queue, &m3);
+    int m4 = 14;
+    heAddArrayQueue(queue, &m4);
+    int m5 = 15;
+    heAddArrayQueue(queue, &m5);
+    int m6 = 16;
+    heAddArrayQueue(queue, &m6);
+    int m7 = 17;
+    heAddArrayQueue(queue, &m7);
+    int m8 = 18;
+    heAddArrayQueue(queue, &m8);
+    int m9 = 19;
+    heAddArrayQueue(queue, &m9);
+    int m10 = 20;
+    heAddArrayQueue(queue, &m10);
+    
+    if (heIsFullArrayQueue(queue) == 1) {
         printf("队列已满\n");
     }
     
-    int *a1 = (int *)deleteArrayQueue(queue);
+    int *a1 = (int *)heDeleteArrayQueue(queue);
     printf("1:%d\n",(int)(*a1));
-    int *a2 = (int *)deleteArrayQueue(queue);
+    int *a2 = (int *)heDeleteArrayQueue(queue);
     printf("2:%d\n",(int)(*a2));
-    int *a3 = (int *)deleteArrayQueue(queue);
+    int *a3 = (int *)heDeleteArrayQueue(queue);
     printf("3:%d\n",(int)(*a3));
-    int *a4 = (int *)deleteArrayQueue(queue);
+    int *a4 = (int *)heDeleteArrayQueue(queue);
     printf("4:%d\n",(int)(*a4));
-    int *a5 = (int *)deleteArrayQueue(queue);
+    int *a5 = (int *)heDeleteArrayQueue(queue);
     printf("5:%d\n",(int)(*a5));
-    int *a6 = (int *)deleteArrayQueue(queue);
+    int *a6 = (int *)heDeleteArrayQueue(queue);
     printf("6:%d\n",(int)(*a6));
-    int *a7 = (int *)deleteArrayQueue(queue);
+    int *a7 = (int *)heDeleteArrayQueue(queue);
     printf("7:%d\n",(int)(*a7));
-    int *a8 = (int *)deleteArrayQueue(queue);
+    int *a8 = (int *)heDeleteArrayQueue(queue);
     printf("8:%d\n",(int)(*a8));
-    int *a9 = (int *)deleteArrayQueue(queue);
+    int *a9 = (int *)heDeleteArrayQueue(queue);
     printf("9:%d\n",(int)(*a9));
-    int *a10 = (int *)deleteArrayQueue(queue);
+    int *a10 = (int *)heDeleteArrayQueue(queue);
     if (a10 != NULL) {
         printf("10:%d\n",(int)(*a10));
     }
     
 
-    if (isEmptyArrayQueue(queue) == 1) {
+    if (heIsEmptyArrayQueue(queue) == 1) {
         printf("队列是空的\n");
     }
-    freeArrayQueue(queue);
+    heFreeArrayQueue(queue);
 }
