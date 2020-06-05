@@ -10,7 +10,7 @@
 #define queue_h
 
 #include <stdio.h>
-
+#include "he_base.h"
 /*
  数组队列
  **/
@@ -34,23 +34,11 @@ void heFreeArrayQueue(HEArrayQueue *queue);
  链式队列
  **/
 
-typedef struct HElinkedQueue HElinkedQueue;
-typedef struct HElinkedNode HElinkedNode;
-
-struct HElinkedNode {
-    void *value;
-    HElinkedNode *next;
-};
-
-struct HElinkedQueue {
-    HElinkedNode *front;
-    HElinkedNode *rear;
-};
 
 HElinkedQueue* heCreateLinkedQueue(void);
 void heAddLinkedQueue(HElinkedQueue *queue,void *value);
 int heIsEmptyLinkedQueue(HElinkedQueue *queue);
 void* heDeleteLinkedQueue(HElinkedQueue *queue);
-void heFreeLinkedQueue(HElinkedQueue *queue);
+void heFreeLinkedQueue(HElinkedQueue *queue,heFreeNodeValueFunc func);
 
 #endif /* queue_h */

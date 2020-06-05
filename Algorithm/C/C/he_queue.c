@@ -92,10 +92,13 @@ void* heDeleteLinkedQueue(HElinkedQueue *queue){
     return value;
 }
 
-void heFreeLinkedQueue(HElinkedQueue *queue){
+void heFreeLinkedQueue(HElinkedQueue *queue,heFreeNodeValueFunc func){
     while (queue->front != NULL) {
         HElinkedNode *curNode = queue->front;
         queue->front = queue->front->next;
+        if (func) {
+            func(curNode->value);
+        }
         free(curNode);
     }
     free(queue);

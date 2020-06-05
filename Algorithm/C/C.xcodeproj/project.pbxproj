@@ -38,6 +38,7 @@
 		007DB7242487AC4600CDB73F /* he_linkedlist.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = he_linkedlist.c; sourceTree = "<group>"; };
 		007DB7262489F44500CDB73F /* he_stack.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = he_stack.h; sourceTree = "<group>"; };
 		007DB7272489F44500CDB73F /* he_stack.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = he_stack.c; sourceTree = "<group>"; };
+		007DB729248A2A5900CDB73F /* he_base.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = he_base.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +80,7 @@
 				007DB7242487AC4600CDB73F /* he_linkedlist.c */,
 				007DB7262489F44500CDB73F /* he_stack.h */,
 				007DB7272489F44500CDB73F /* he_stack.c */,
+				007DB729248A2A5900CDB73F /* he_base.h */,
 			);
 			path = C;
 			sourceTree = "<group>";

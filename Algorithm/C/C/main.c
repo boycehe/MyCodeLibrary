@@ -8,14 +8,92 @@
 
 #include <stdio.h>
 #include "he_queue.h"
+#include "he_linkedlist.h"
 
 void testArrayQueue(void);
 void teatLinkedQueue(void);
+void testLinkedList(void);
+void testLinkedList2(void);
+
+int equalInt(void *rVal,void *lVal){
+    int *r = (int*)(rVal);
+    int *l = (int*)(lVal);
+    if (*r == *l) {
+        return 1;
+    }
+    return 0;
+}
 
 int main(int argc, const char * argv[]) {
-    testArrayQueue();
-    teatLinkedQueue();
+//  testArrayQueue();
+//  teatLinkedQueue();
+    testLinkedList();
+//  testLinkedList2();
     return 0;
+}
+
+void testLinkedList(void){
+    
+    HElinkedList *list = heCreateLinkedList();
+    int m1 = 11;
+    heAddLinkedList(list, &m1);
+    int m2 = 12;
+    heAddLinkedList(list, &m2);
+    int m3 = 13;
+    heAddLinkedList(list, &m3);
+    int m4 = 14;
+    heAddLinkedList(list, &m4);
+    int m5 = 15;
+    heAddLinkedList(list, &m5);
+    int m6 = 16;
+    heAddLinkedList(list, &m6);
+    int m7 = 17;
+    heAddLinkedList(list, &m7);
+    int m8 = 18;
+    heAddLinkedList(list, &m8);
+    int m9 = 19;
+    heAddLinkedList(list, &m9);
+    int m10 = 20;
+    heAddLinkedList(list, &m10);
+
+    int b1 = 20;
+    int *a1 = (int *)heDeleteLinkedList(list,&b1,&equalInt);
+    printf("link->1:%d\n",(int)(*a1));
+    int b2 = 19;
+    int *a2 = (int *)heDeleteLinkedList(list,&b2,&equalInt);
+    printf("link->2:%d\n",(int)(*a2));
+    int b3 = 18;
+    int *a3 = (int *)heDeleteLinkedList(list,&b3,&equalInt);
+    printf("link->3:%d\n",(int)(*a3));
+    int b4 = 17;
+    int *a4 = (int *)heDeleteLinkedList(list,&b4,&equalInt);
+    printf("link->4:%d\n",(int)(*a4));
+    int b5 = 16;
+    int *a5 = (int *)heDeleteLinkedList(list,&b5,&equalInt);
+    printf("link->5:%d\n",(int)(*a5));
+    int b6 = 15;
+    int *a6 = (int *)heDeleteLinkedList(list,&b6,&equalInt);
+    printf("link->6:%d\n",(int)(*a6));
+    int b7 = 14;
+    int *a7 = (int *)heDeleteLinkedList(list,&b7,&equalInt);
+    printf("link->7:%d\n",(int)(*a7));
+    int b8 = 13;
+    int *a8 = (int *)heDeleteLinkedList(list,&b8,&equalInt);
+    printf("link->8:%d\n",(int)(*a8));
+    int b9 = 12;
+    int *a9 = (int *)heDeleteLinkedList(list,&b9,&equalInt);
+    printf("link->9:%d\n",(int)(*a9));
+    int b10 = 11;
+    int *a10 = (int *)heDeleteLinkedList(list,&b10,&equalInt);
+    if (a10 != NULL) {
+        printf("link->10:%d\n",(int)(*a10));
+    }
+    heFreeLinkedList(list, NULL);
+    
+    
+}
+void testLinkedList2(void){
+    
 }
 
 void teatLinkedQueue(void){
@@ -66,7 +144,7 @@ void teatLinkedQueue(void){
     if (heIsEmptyLinkedQueue(queue) == 1) {
         printf("linked 队列是空的\n");
     }
-    heFreeLinkedQueue(queue);
+    heFreeLinkedQueue(queue,NULL);
     
 }
 
