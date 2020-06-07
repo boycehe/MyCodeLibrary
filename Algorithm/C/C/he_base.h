@@ -16,6 +16,7 @@ typedef void (*heFreeNodeValueFunc)(void *Val);
 typedef struct HElinkedQueue HElinkedQueue;
 typedef struct HElinkedNode HElinkedNode;
 typedef struct HElinkedList HElinkedList;
+typedef struct HEStack  HEStack;
 
 struct HElinkedNode {
     void *value;
@@ -30,6 +31,13 @@ struct HElinkedQueue {
 struct HElinkedList {
     HElinkedNode *rear;
     HElinkedNode *head;
+};
+
+struct HEStack {
+    unsigned int stack_size;
+    unsigned int top;
+    void    **items;
+    
 };
 
 #endif /* he_base_h */

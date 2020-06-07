@@ -10,5 +10,15 @@
 #define he_stack_h
 
 #include <stdio.h>
+#include "he_base.h"
+
+
+HEStack *heCreateStack(unsigned int size);
+int hePush(HEStack *stack,void *value);
+void *hePop(HEStack *stack);
+void *heGetTop(HEStack *stack);
+int heClearStack(HEStack *stack,heFreeNodeValueFunc func);
+int heFreeStack(HEStack *stack,heFreeNodeValueFunc func);
+
 
 #endif /* he_stack_h */

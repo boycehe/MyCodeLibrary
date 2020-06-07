@@ -35,7 +35,7 @@ struct HEbothwayLinkedList {
 
 HEbothwayLinkedList* heCreateBothwayLinkedList(void);
 int heAddBothwayLikedList(HEbothwayLinkedList*linkedList,void *value);
-void* heDeleteBothwayLinkedList(HEbothwayLinkedList*linkedList,void *value ,heEqulNodeFunc func);
+void* heDeleteBothwayLinkedList(HEbothwayLinkedList*linkedList,void  *value ,heEqulNodeFunc func);
 int heIsValueInBothwayLinkedList(HEbothwayLinkedList*linkedList,void *value,heEqulNodeFunc func);
 void heFreeBothwayLinkedList(HEbothwayLinkedList *linkedList,heFreeNodeValueFunc func);
 //循环链表

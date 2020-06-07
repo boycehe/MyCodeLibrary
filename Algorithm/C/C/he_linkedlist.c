@@ -114,6 +114,7 @@ int heAddBothwayLikedList(HEbothwayLinkedList*linkedList,void *value){
         linkedList->rear = node;
     }else{
         node->prior = linkedList->rear;
+        linkedList->rear->next = node;
         linkedList->rear = node;
     }
     return 1;
@@ -130,6 +131,7 @@ HEbothwayLinkedNode* heFindValueInBothwayLikedList(HEbothwayLinkedList*linkedLis
         if (func(curNode->value,value) == 1) {
             return curNode;
         }
+        curNode = curNode->next;
     }
     return NULL;
 }
@@ -140,8 +142,24 @@ void* heDeleteBothwayLinkedList(HEbothwayLinkedList*linkedList,void *value ,heEq
     if (curNode == NULL) {
         return NULL;
     }
-    curNode->prior->next = curNode->next;
-    curNode->next->prior = curNode->prior;
+    
+    //如果是头部节点
+    if (curNode == linkedList->head) {
+        linkedList->head = curNode->next;
+    }
+    
+    if (curNode == linkedList->rear) {
+        linkedList->rear = curNode->prior;
+    }
+    
+    if (curNode->prior != NULL) {
+        curNode->prior->next = curNode->next;
+    }
+    
+    if (curNode->next != NULL) {
+        curNode->next->prior = curNode->prior;
+    }
+    
     void *cValue = curNode->value;
     free(curNode);
     return cValue;
@@ -157,6 +175,10 @@ int heIsValueInBothwayLinkedList(HEbothwayLinkedList*linkedList,void *value,heEq
 
 void heFreeBothwayLinkedList(HEbothwayLinkedList *linkedList,heFreeNodeValueFunc func){
     if (linkedList == NULL) {
+        return;
+    }
+    if (linkedList->rear == NULL && linkedList->head == NULL) {
+        free(linkedList);
         return;
     }
     HEbothwayLinkedNode *curNode = linkedList->rear->prior;
