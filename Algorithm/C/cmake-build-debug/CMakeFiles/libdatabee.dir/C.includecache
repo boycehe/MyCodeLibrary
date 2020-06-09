@@ -1,0 +1,38 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/heboyce/Desktop/MyCodeLibrary/Algorithm/C/C/he_base.h
+
+/Users/heboyce/Desktop/MyCodeLibrary/Algorithm/C/C/he_linkedlist.h
+stdio.h
+-
+he_base.h
+/Users/heboyce/Desktop/MyCodeLibrary/Algorithm/C/C/he_base.h
+
+/Users/heboyce/Desktop/MyCodeLibrary/Algorithm/C/C/he_queue.h
+stdio.h
+-
+he_base.h
+/Users/heboyce/Desktop/MyCodeLibrary/Algorithm/C/C/he_base.h
+
+/Users/heboyce/Desktop/MyCodeLibrary/Algorithm/C/C/he_stack.h
+stdio.h
+-
+he_base.h
+/Users/heboyce/Desktop/MyCodeLibrary/Algorithm/C/C/he_base.h
+
+/Users/heboyce/Desktop/MyCodeLibrary/Algorithm/C/C/main.c
+stdio.h
+-
+he_queue.h
+/Users/heboyce/Desktop/MyCodeLibrary/Algorithm/C/C/he_queue.h
+he_linkedlist.h
+/Users/heboyce/Desktop/MyCodeLibrary/Algorithm/C/C/he_linkedlist.h
+he_stack.h
+/Users/heboyce/Desktop/MyCodeLibrary/Algorithm/C/C/he_stack.h
+

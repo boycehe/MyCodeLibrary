@@ -1,0 +1,4 @@
+/Users/heboyce/Desktop/MyCodeLibrary/Algorithm/C/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/Users/heboyce/Desktop/MyCodeLibrary/Algorithm/C/cmake-build-debug/CMakeFiles/edit_cache.dir
+/Users/heboyce/Desktop/MyCodeLibrary/Algorithm/C/cmake-build-debug/CMakeFiles/libdatabee.dir
+/Users/heboyce/Desktop/MyCodeLibrary/Algorithm/C/cmake-build-debug/CMakeFiles/wadatahttpparser.dir
