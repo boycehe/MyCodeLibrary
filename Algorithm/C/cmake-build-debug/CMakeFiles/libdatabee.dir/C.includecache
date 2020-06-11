@@ -20,6 +20,10 @@ stdio.h
 he_base.h
 /Users/heboyce/Desktop/MyCodeLibrary/Algorithm/C/C/he_base.h
 
+/Users/heboyce/Desktop/MyCodeLibrary/Algorithm/C/C/he_sort.h
+he_base.h
+/Users/heboyce/Desktop/MyCodeLibrary/Algorithm/C/C/he_base.h
+
 /Users/heboyce/Desktop/MyCodeLibrary/Algorithm/C/C/he_stack.h
 stdio.h
 -
@@ -35,4 +39,10 @@ he_linkedlist.h
 /Users/heboyce/Desktop/MyCodeLibrary/Algorithm/C/C/he_linkedlist.h
 he_stack.h
 /Users/heboyce/Desktop/MyCodeLibrary/Algorithm/C/C/he_stack.h
+he_sort.h
+/Users/heboyce/Desktop/MyCodeLibrary/Algorithm/C/C/he_sort.h
+string.h
+-
+stdlib.h
+-
 

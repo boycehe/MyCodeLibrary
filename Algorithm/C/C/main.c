@@ -10,20 +10,28 @@
 #include "he_queue.h"
 #include "he_linkedlist.h"
 #include "he_stack.h"
+#include "he_sort.h"
+#include <string.h>
+#include <stdlib.h>
 
 void testArrayQueue(void);
 void teatLinkedQueue(void);
 void testLinkedList(void);
 void testLinkedList2(void);
 void testStack(void);
+void testMergeSort(void);
 
-int equalInt(void *rVal,void *lVal){
+
+HERelationalSymbols equalInt(void *rVal,void *lVal){
     int *r = (int*)(rVal);
     int *l = (int*)(lVal);
     if (*r == *l) {
-        return 1;
+        return HEEqual;
+    } else if(*r > *l){
+        return HEGreaterThen;
+    }else{
+        return HELessThen;
     }
-    return 0;
 }
 
 int main(int argc, const char * argv[]) {
@@ -31,8 +39,74 @@ int main(int argc, const char * argv[]) {
 //  teatLinkedQueue();
 //  testLinkedList();
 //  testLinkedList2();
-    testStack();
+//  testStack();
+    testMergeSort();
+
     return 0;
+}
+
+void testMergeSort(void){
+    int **values = (int **)malloc(sizeof(int *)*13);
+    int index = 0;
+    int *m1 = (int *)malloc(sizeof(int));
+    *m1 = 12;
+    memcpy(values+index,&m1,sizeof(int *));
+    index++;
+    int *m2 = (int *)malloc(sizeof(int));
+    *m2 = 2;
+    memcpy(values+index,&m2,sizeof(int *));
+    index++;
+    int *m3 = (int *)malloc(sizeof(int));
+    *m3 = 23;
+    memcpy(values+index,&m3,sizeof(int *));
+    index++;
+    int *m4 = (int *)malloc(sizeof(int));
+    *m4 = 123;
+    memcpy(values+index,&m4,sizeof(int *));
+    index++;
+    int *m5 = (int *)malloc(sizeof(int));
+    *m5 = 20;
+    memcpy(values+index,&m5,sizeof(int *));
+    index++;
+    int *m6 = (int *)malloc(sizeof(int));
+    *m6 = 5;
+    memcpy(values+index,&m6,sizeof(int *));
+    index++;
+    int *m7 = (int *)malloc(sizeof(int));
+    *m7 = 8;
+    memcpy(values+index,&m7,sizeof(int *));
+    index++;
+    int *m8 = (int *)malloc(sizeof(int));
+     *m8 = 120;
+    memcpy(values+index,&m8,sizeof(int *));
+    index++;
+    int *m9 = (int *)malloc(sizeof(int));
+    *m9 = 52;
+    memcpy(values+index,&m9,sizeof(int *));
+    index++;
+    int *m10 = (int *)malloc(sizeof(int));
+    *m10 = 112;
+    memcpy(values+index,&m10,sizeof(int *));
+    index++;
+    int *m11 = (int *)malloc(sizeof(int));
+    *m11 = 20;
+    memcpy(values+index,&m11,sizeof(int *));
+    index++;
+    int *m12 = (int *)malloc(sizeof(int));
+    *m12 = 34;
+    memcpy(values+index,&m12,sizeof(int *));
+    index++;
+    int *m13 = (int *)malloc(sizeof(int));
+    *m13 = 19;
+    memcpy(values+index,&m13,sizeof(int *));
+
+    //heMergeSortByRecursive(values,13,&equalInt);
+    heMergeSortNoRecursive(values,13,&equalInt);
+
+    for (int i = 0; i < 13; ++i) {
+     int *value = *(values+i);
+     printf("after value:%d\n",(int)(*value));
+    }
 }
 
 void testStack(void){

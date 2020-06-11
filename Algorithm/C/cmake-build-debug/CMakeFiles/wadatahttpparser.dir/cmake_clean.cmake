@@ -1,8 +1,9 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/wadatahttpparser.dir/C/hc_question.c.o"
   "CMakeFiles/wadatahttpparser.dir/C/he_linkedlist.c.o"
+  "CMakeFiles/wadatahttpparser.dir/C/he_question.c.o"
   "CMakeFiles/wadatahttpparser.dir/C/he_queue.c.o"
   "CMakeFiles/wadatahttpparser.dir/C/he_search.c.o"
+  "CMakeFiles/wadatahttpparser.dir/C/he_sort.c.o"
   "CMakeFiles/wadatahttpparser.dir/C/he_stack.c.o"
   "CMakeFiles/wadatahttpparser.dir/C/he_tree.c.o"
   "CMakeFiles/wadatahttpparser.dir/C/main.c.o"

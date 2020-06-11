@@ -136,33 +136,6 @@ wadatahttpparser/fast:
 	$(MAKE) -f CMakeFiles/wadatahttpparser.dir/build.make CMakeFiles/wadatahttpparser.dir/build
 .PHONY : wadatahttpparser/fast
 
-C/hc_question.o: C/hc_question.c.o
-
-.PHONY : C/hc_question.o
-
-# target to build an object file
-C/hc_question.c.o:
-	$(MAKE) -f CMakeFiles/wadatahttpparser.dir/build.make CMakeFiles/wadatahttpparser.dir/C/hc_question.c.o
-.PHONY : C/hc_question.c.o
-
-C/hc_question.i: C/hc_question.c.i
-
-.PHONY : C/hc_question.i
-
-# target to preprocess a source file
-C/hc_question.c.i:
-	$(MAKE) -f CMakeFiles/wadatahttpparser.dir/build.make CMakeFiles/wadatahttpparser.dir/C/hc_question.c.i
-.PHONY : C/hc_question.c.i
-
-C/hc_question.s: C/hc_question.c.s
-
-.PHONY : C/hc_question.s
-
-# target to generate assembly for a file
-C/hc_question.c.s:
-	$(MAKE) -f CMakeFiles/wadatahttpparser.dir/build.make CMakeFiles/wadatahttpparser.dir/C/hc_question.c.s
-.PHONY : C/hc_question.c.s
-
 C/he_linkedlist.o: C/he_linkedlist.c.o
 
 .PHONY : C/he_linkedlist.o
@@ -189,6 +162,33 @@ C/he_linkedlist.s: C/he_linkedlist.c.s
 C/he_linkedlist.c.s:
 	$(MAKE) -f CMakeFiles/wadatahttpparser.dir/build.make CMakeFiles/wadatahttpparser.dir/C/he_linkedlist.c.s
 .PHONY : C/he_linkedlist.c.s
+
+C/he_question.o: C/he_question.c.o
+
+.PHONY : C/he_question.o
+
+# target to build an object file
+C/he_question.c.o:
+	$(MAKE) -f CMakeFiles/wadatahttpparser.dir/build.make CMakeFiles/wadatahttpparser.dir/C/he_question.c.o
+.PHONY : C/he_question.c.o
+
+C/he_question.i: C/he_question.c.i
+
+.PHONY : C/he_question.i
+
+# target to preprocess a source file
+C/he_question.c.i:
+	$(MAKE) -f CMakeFiles/wadatahttpparser.dir/build.make CMakeFiles/wadatahttpparser.dir/C/he_question.c.i
+.PHONY : C/he_question.c.i
+
+C/he_question.s: C/he_question.c.s
+
+.PHONY : C/he_question.s
+
+# target to generate assembly for a file
+C/he_question.c.s:
+	$(MAKE) -f CMakeFiles/wadatahttpparser.dir/build.make CMakeFiles/wadatahttpparser.dir/C/he_question.c.s
+.PHONY : C/he_question.c.s
 
 C/he_queue.o: C/he_queue.c.o
 
@@ -243,6 +243,33 @@ C/he_search.s: C/he_search.c.s
 C/he_search.c.s:
 	$(MAKE) -f CMakeFiles/wadatahttpparser.dir/build.make CMakeFiles/wadatahttpparser.dir/C/he_search.c.s
 .PHONY : C/he_search.c.s
+
+C/he_sort.o: C/he_sort.c.o
+
+.PHONY : C/he_sort.o
+
+# target to build an object file
+C/he_sort.c.o:
+	$(MAKE) -f CMakeFiles/wadatahttpparser.dir/build.make CMakeFiles/wadatahttpparser.dir/C/he_sort.c.o
+.PHONY : C/he_sort.c.o
+
+C/he_sort.i: C/he_sort.c.i
+
+.PHONY : C/he_sort.i
+
+# target to preprocess a source file
+C/he_sort.c.i:
+	$(MAKE) -f CMakeFiles/wadatahttpparser.dir/build.make CMakeFiles/wadatahttpparser.dir/C/he_sort.c.i
+.PHONY : C/he_sort.c.i
+
+C/he_sort.s: C/he_sort.c.s
+
+.PHONY : C/he_sort.s
+
+# target to generate assembly for a file
+C/he_sort.c.s:
+	$(MAKE) -f CMakeFiles/wadatahttpparser.dir/build.make CMakeFiles/wadatahttpparser.dir/C/he_sort.c.s
+.PHONY : C/he_sort.c.s
 
 C/he_stack.o: C/he_stack.c.o
 
@@ -338,18 +365,21 @@ help:
 	@echo "... edit_cache"
 	@echo "... libdatabee"
 	@echo "... wadatahttpparser"
-	@echo "... C/hc_question.o"
-	@echo "... C/hc_question.i"
-	@echo "... C/hc_question.s"
 	@echo "... C/he_linkedlist.o"
 	@echo "... C/he_linkedlist.i"
 	@echo "... C/he_linkedlist.s"
+	@echo "... C/he_question.o"
+	@echo "... C/he_question.i"
+	@echo "... C/he_question.s"
 	@echo "... C/he_queue.o"
 	@echo "... C/he_queue.i"
 	@echo "... C/he_queue.s"
 	@echo "... C/he_search.o"
 	@echo "... C/he_search.i"
 	@echo "... C/he_search.s"
+	@echo "... C/he_sort.o"
+	@echo "... C/he_sort.i"
+	@echo "... C/he_sort.s"
 	@echo "... C/he_stack.o"
 	@echo "... C/he_stack.i"
 	@echo "... C/he_stack.s"

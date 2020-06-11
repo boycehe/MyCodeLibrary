@@ -126,16 +126,16 @@
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="/Users/heboyce/Desktop/MyCodeLibrary/Algorithm/C/C/hc_question.c">
-			<Option target="wadatahttpparser"/>
-		</Unit>
-		<Unit filename="/Users/heboyce/Desktop/MyCodeLibrary/Algorithm/C/C/hc_question.h">
-			<Option target="wadatahttpparser"/>
-		</Unit>
 		<Unit filename="/Users/heboyce/Desktop/MyCodeLibrary/Algorithm/C/C/he_linkedlist.c">
 			<Option target="wadatahttpparser"/>
 		</Unit>
 		<Unit filename="/Users/heboyce/Desktop/MyCodeLibrary/Algorithm/C/C/he_linkedlist.h">
+			<Option target="wadatahttpparser"/>
+		</Unit>
+		<Unit filename="/Users/heboyce/Desktop/MyCodeLibrary/Algorithm/C/C/he_question.c">
+			<Option target="wadatahttpparser"/>
+		</Unit>
+		<Unit filename="/Users/heboyce/Desktop/MyCodeLibrary/Algorithm/C/C/he_question.h">
 			<Option target="wadatahttpparser"/>
 		</Unit>
 		<Unit filename="/Users/heboyce/Desktop/MyCodeLibrary/Algorithm/C/C/he_queue.c">
@@ -145,6 +145,12 @@
 			<Option target="wadatahttpparser"/>
 		</Unit>
 		<Unit filename="/Users/heboyce/Desktop/MyCodeLibrary/Algorithm/C/C/he_search.c">
+			<Option target="wadatahttpparser"/>
+		</Unit>
+		<Unit filename="/Users/heboyce/Desktop/MyCodeLibrary/Algorithm/C/C/he_sort.c">
+			<Option target="wadatahttpparser"/>
+		</Unit>
+		<Unit filename="/Users/heboyce/Desktop/MyCodeLibrary/Algorithm/C/C/he_sort.h">
 			<Option target="wadatahttpparser"/>
 		</Unit>
 		<Unit filename="/Users/heboyce/Desktop/MyCodeLibrary/Algorithm/C/C/he_stack.c">

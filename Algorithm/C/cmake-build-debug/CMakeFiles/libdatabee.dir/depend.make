@@ -4,6 +4,7 @@
 CMakeFiles/libdatabee.dir/C/main.c.o: ../C/he_base.h
 CMakeFiles/libdatabee.dir/C/main.c.o: ../C/he_linkedlist.h
 CMakeFiles/libdatabee.dir/C/main.c.o: ../C/he_queue.h
+CMakeFiles/libdatabee.dir/C/main.c.o: ../C/he_sort.h
 CMakeFiles/libdatabee.dir/C/main.c.o: ../C/he_stack.h
 CMakeFiles/libdatabee.dir/C/main.c.o: ../C/main.c
 
