@@ -147,6 +147,9 @@
 		<Unit filename="/Users/heboyce/Desktop/MyCodeLibrary/Algorithm/C/C/he_search.c">
 			<Option target="wadatahttpparser"/>
 		</Unit>
+		<Unit filename="/Users/heboyce/Desktop/MyCodeLibrary/Algorithm/C/C/he_search.h">
+			<Option target="wadatahttpparser"/>
+		</Unit>
 		<Unit filename="/Users/heboyce/Desktop/MyCodeLibrary/Algorithm/C/C/he_sort.c">
 			<Option target="wadatahttpparser"/>
 		</Unit>

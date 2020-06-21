@@ -122,7 +122,6 @@ void heMergeSortNoRecursive(void **values,unsigned int size,heCompareValueFunc f
         index = index + step + rightStep;
         free(leftValues);
         free(rightValues);
-
     }
 
 }
