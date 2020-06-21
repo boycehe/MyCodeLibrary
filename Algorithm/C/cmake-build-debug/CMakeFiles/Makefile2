@@ -35,19 +35,19 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake
+CMAKE_COMMAND = /opt/clion-2020.1/bin/cmake/linux/bin/cmake
 
 # The command to remove a file.
-RM = /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -E remove -f
+RM = /opt/clion-2020.1/bin/cmake/linux/bin/cmake -E remove -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/heboyce/Desktop/MyCodeLibrary/Algorithm/C
+CMAKE_SOURCE_DIR = /home/boyce/Project/Code/MyCodeLibrary/Algorithm/C
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/heboyce/Desktop/MyCodeLibrary/Algorithm/C/cmake-build-debug
+CMAKE_BINARY_DIR = /home/boyce/Project/Code/MyCodeLibrary/Algorithm/C/cmake-build-debug
 
 #=============================================================================
 # Directory level rules for the build root directory
@@ -76,14 +76,14 @@ clean: CMakeFiles/wadatahttpparser.dir/clean
 CMakeFiles/libdatabee.dir/all: CMakeFiles/wadatahttpparser.dir/all
 	$(MAKE) -f CMakeFiles/libdatabee.dir/build.make CMakeFiles/libdatabee.dir/depend
 	$(MAKE) -f CMakeFiles/libdatabee.dir/build.make CMakeFiles/libdatabee.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/heboyce/Desktop/MyCodeLibrary/Algorithm/C/cmake-build-debug/CMakeFiles --progress-num=1,2 "Built target libdatabee"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/boyce/Project/Code/MyCodeLibrary/Algorithm/C/cmake-build-debug/CMakeFiles --progress-num=1,2 "Built target libdatabee"
 .PHONY : CMakeFiles/libdatabee.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/libdatabee.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/heboyce/Desktop/MyCodeLibrary/Algorithm/C/cmake-build-debug/CMakeFiles 11
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/boyce/Project/Code/MyCodeLibrary/Algorithm/C/cmake-build-debug/CMakeFiles 11
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/libdatabee.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/heboyce/Desktop/MyCodeLibrary/Algorithm/C/cmake-build-debug/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/boyce/Project/Code/MyCodeLibrary/Algorithm/C/cmake-build-debug/CMakeFiles 0
 .PHONY : CMakeFiles/libdatabee.dir/rule
 
 # Convenience name for target.
@@ -103,14 +103,14 @@ CMakeFiles/libdatabee.dir/clean:
 CMakeFiles/wadatahttpparser.dir/all:
 	$(MAKE) -f CMakeFiles/wadatahttpparser.dir/build.make CMakeFiles/wadatahttpparser.dir/depend
 	$(MAKE) -f CMakeFiles/wadatahttpparser.dir/build.make CMakeFiles/wadatahttpparser.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/heboyce/Desktop/MyCodeLibrary/Algorithm/C/cmake-build-debug/CMakeFiles --progress-num=3,4,5,6,7,8,9,10,11 "Built target wadatahttpparser"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/boyce/Project/Code/MyCodeLibrary/Algorithm/C/cmake-build-debug/CMakeFiles --progress-num=3,4,5,6,7,8,9,10,11 "Built target wadatahttpparser"
 .PHONY : CMakeFiles/wadatahttpparser.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/wadatahttpparser.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/heboyce/Desktop/MyCodeLibrary/Algorithm/C/cmake-build-debug/CMakeFiles 9
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/boyce/Project/Code/MyCodeLibrary/Algorithm/C/cmake-build-debug/CMakeFiles 9
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/wadatahttpparser.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/heboyce/Desktop/MyCodeLibrary/Algorithm/C/cmake-build-debug/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/boyce/Project/Code/MyCodeLibrary/Algorithm/C/cmake-build-debug/CMakeFiles 0
 .PHONY : CMakeFiles/wadatahttpparser.dir/rule
 
 # Convenience name for target.

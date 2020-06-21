@@ -34,19 +34,19 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake
+CMAKE_COMMAND = /opt/clion-2020.1/bin/cmake/linux/bin/cmake
 
 # The command to remove a file.
-RM = /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -E remove -f
+RM = /opt/clion-2020.1/bin/cmake/linux/bin/cmake -E remove -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/heboyce/Desktop/MyCodeLibrary/Algorithm/C
+CMAKE_SOURCE_DIR = /home/boyce/Project/Code/MyCodeLibrary/Algorithm/C
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/heboyce/Desktop/MyCodeLibrary/Algorithm/C/cmake-build-debug
+CMAKE_BINARY_DIR = /home/boyce/Project/Code/MyCodeLibrary/Algorithm/C/cmake-build-debug
 
 # Include any dependencies generated for this target.
 include CMakeFiles/wadatahttpparser.dir/depend.make
@@ -59,107 +59,107 @@ include CMakeFiles/wadatahttpparser.dir/flags.make
 
 CMakeFiles/wadatahttpparser.dir/C/he_linkedlist.c.o: CMakeFiles/wadatahttpparser.dir/flags.make
 CMakeFiles/wadatahttpparser.dir/C/he_linkedlist.c.o: ../C/he_linkedlist.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/heboyce/Desktop/MyCodeLibrary/Algorithm/C/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/wadatahttpparser.dir/C/he_linkedlist.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/wadatahttpparser.dir/C/he_linkedlist.c.o   -c /Users/heboyce/Desktop/MyCodeLibrary/Algorithm/C/C/he_linkedlist.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/boyce/Project/Code/MyCodeLibrary/Algorithm/C/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/wadatahttpparser.dir/C/he_linkedlist.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/wadatahttpparser.dir/C/he_linkedlist.c.o   -c /home/boyce/Project/Code/MyCodeLibrary/Algorithm/C/C/he_linkedlist.c
 
 CMakeFiles/wadatahttpparser.dir/C/he_linkedlist.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/wadatahttpparser.dir/C/he_linkedlist.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/heboyce/Desktop/MyCodeLibrary/Algorithm/C/C/he_linkedlist.c > CMakeFiles/wadatahttpparser.dir/C/he_linkedlist.c.i
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/boyce/Project/Code/MyCodeLibrary/Algorithm/C/C/he_linkedlist.c > CMakeFiles/wadatahttpparser.dir/C/he_linkedlist.c.i
 
 CMakeFiles/wadatahttpparser.dir/C/he_linkedlist.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/wadatahttpparser.dir/C/he_linkedlist.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/heboyce/Desktop/MyCodeLibrary/Algorithm/C/C/he_linkedlist.c -o CMakeFiles/wadatahttpparser.dir/C/he_linkedlist.c.s
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/boyce/Project/Code/MyCodeLibrary/Algorithm/C/C/he_linkedlist.c -o CMakeFiles/wadatahttpparser.dir/C/he_linkedlist.c.s
 
 CMakeFiles/wadatahttpparser.dir/C/he_question.c.o: CMakeFiles/wadatahttpparser.dir/flags.make
 CMakeFiles/wadatahttpparser.dir/C/he_question.c.o: ../C/he_question.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/heboyce/Desktop/MyCodeLibrary/Algorithm/C/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/wadatahttpparser.dir/C/he_question.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/wadatahttpparser.dir/C/he_question.c.o   -c /Users/heboyce/Desktop/MyCodeLibrary/Algorithm/C/C/he_question.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/boyce/Project/Code/MyCodeLibrary/Algorithm/C/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/wadatahttpparser.dir/C/he_question.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/wadatahttpparser.dir/C/he_question.c.o   -c /home/boyce/Project/Code/MyCodeLibrary/Algorithm/C/C/he_question.c
 
 CMakeFiles/wadatahttpparser.dir/C/he_question.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/wadatahttpparser.dir/C/he_question.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/heboyce/Desktop/MyCodeLibrary/Algorithm/C/C/he_question.c > CMakeFiles/wadatahttpparser.dir/C/he_question.c.i
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/boyce/Project/Code/MyCodeLibrary/Algorithm/C/C/he_question.c > CMakeFiles/wadatahttpparser.dir/C/he_question.c.i
 
 CMakeFiles/wadatahttpparser.dir/C/he_question.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/wadatahttpparser.dir/C/he_question.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/heboyce/Desktop/MyCodeLibrary/Algorithm/C/C/he_question.c -o CMakeFiles/wadatahttpparser.dir/C/he_question.c.s
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/boyce/Project/Code/MyCodeLibrary/Algorithm/C/C/he_question.c -o CMakeFiles/wadatahttpparser.dir/C/he_question.c.s
 
 CMakeFiles/wadatahttpparser.dir/C/he_queue.c.o: CMakeFiles/wadatahttpparser.dir/flags.make
 CMakeFiles/wadatahttpparser.dir/C/he_queue.c.o: ../C/he_queue.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/heboyce/Desktop/MyCodeLibrary/Algorithm/C/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMakeFiles/wadatahttpparser.dir/C/he_queue.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/wadatahttpparser.dir/C/he_queue.c.o   -c /Users/heboyce/Desktop/MyCodeLibrary/Algorithm/C/C/he_queue.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/boyce/Project/Code/MyCodeLibrary/Algorithm/C/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMakeFiles/wadatahttpparser.dir/C/he_queue.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/wadatahttpparser.dir/C/he_queue.c.o   -c /home/boyce/Project/Code/MyCodeLibrary/Algorithm/C/C/he_queue.c
 
 CMakeFiles/wadatahttpparser.dir/C/he_queue.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/wadatahttpparser.dir/C/he_queue.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/heboyce/Desktop/MyCodeLibrary/Algorithm/C/C/he_queue.c > CMakeFiles/wadatahttpparser.dir/C/he_queue.c.i
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/boyce/Project/Code/MyCodeLibrary/Algorithm/C/C/he_queue.c > CMakeFiles/wadatahttpparser.dir/C/he_queue.c.i
 
 CMakeFiles/wadatahttpparser.dir/C/he_queue.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/wadatahttpparser.dir/C/he_queue.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/heboyce/Desktop/MyCodeLibrary/Algorithm/C/C/he_queue.c -o CMakeFiles/wadatahttpparser.dir/C/he_queue.c.s
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/boyce/Project/Code/MyCodeLibrary/Algorithm/C/C/he_queue.c -o CMakeFiles/wadatahttpparser.dir/C/he_queue.c.s
 
 CMakeFiles/wadatahttpparser.dir/C/he_search.c.o: CMakeFiles/wadatahttpparser.dir/flags.make
 CMakeFiles/wadatahttpparser.dir/C/he_search.c.o: ../C/he_search.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/heboyce/Desktop/MyCodeLibrary/Algorithm/C/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object CMakeFiles/wadatahttpparser.dir/C/he_search.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/wadatahttpparser.dir/C/he_search.c.o   -c /Users/heboyce/Desktop/MyCodeLibrary/Algorithm/C/C/he_search.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/boyce/Project/Code/MyCodeLibrary/Algorithm/C/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object CMakeFiles/wadatahttpparser.dir/C/he_search.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/wadatahttpparser.dir/C/he_search.c.o   -c /home/boyce/Project/Code/MyCodeLibrary/Algorithm/C/C/he_search.c
 
 CMakeFiles/wadatahttpparser.dir/C/he_search.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/wadatahttpparser.dir/C/he_search.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/heboyce/Desktop/MyCodeLibrary/Algorithm/C/C/he_search.c > CMakeFiles/wadatahttpparser.dir/C/he_search.c.i
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/boyce/Project/Code/MyCodeLibrary/Algorithm/C/C/he_search.c > CMakeFiles/wadatahttpparser.dir/C/he_search.c.i
 
 CMakeFiles/wadatahttpparser.dir/C/he_search.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/wadatahttpparser.dir/C/he_search.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/heboyce/Desktop/MyCodeLibrary/Algorithm/C/C/he_search.c -o CMakeFiles/wadatahttpparser.dir/C/he_search.c.s
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/boyce/Project/Code/MyCodeLibrary/Algorithm/C/C/he_search.c -o CMakeFiles/wadatahttpparser.dir/C/he_search.c.s
 
 CMakeFiles/wadatahttpparser.dir/C/he_sort.c.o: CMakeFiles/wadatahttpparser.dir/flags.make
 CMakeFiles/wadatahttpparser.dir/C/he_sort.c.o: ../C/he_sort.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/heboyce/Desktop/MyCodeLibrary/Algorithm/C/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building C object CMakeFiles/wadatahttpparser.dir/C/he_sort.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/wadatahttpparser.dir/C/he_sort.c.o   -c /Users/heboyce/Desktop/MyCodeLibrary/Algorithm/C/C/he_sort.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/boyce/Project/Code/MyCodeLibrary/Algorithm/C/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building C object CMakeFiles/wadatahttpparser.dir/C/he_sort.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/wadatahttpparser.dir/C/he_sort.c.o   -c /home/boyce/Project/Code/MyCodeLibrary/Algorithm/C/C/he_sort.c
 
 CMakeFiles/wadatahttpparser.dir/C/he_sort.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/wadatahttpparser.dir/C/he_sort.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/heboyce/Desktop/MyCodeLibrary/Algorithm/C/C/he_sort.c > CMakeFiles/wadatahttpparser.dir/C/he_sort.c.i
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/boyce/Project/Code/MyCodeLibrary/Algorithm/C/C/he_sort.c > CMakeFiles/wadatahttpparser.dir/C/he_sort.c.i
 
 CMakeFiles/wadatahttpparser.dir/C/he_sort.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/wadatahttpparser.dir/C/he_sort.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/heboyce/Desktop/MyCodeLibrary/Algorithm/C/C/he_sort.c -o CMakeFiles/wadatahttpparser.dir/C/he_sort.c.s
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/boyce/Project/Code/MyCodeLibrary/Algorithm/C/C/he_sort.c -o CMakeFiles/wadatahttpparser.dir/C/he_sort.c.s
 
 CMakeFiles/wadatahttpparser.dir/C/he_stack.c.o: CMakeFiles/wadatahttpparser.dir/flags.make
 CMakeFiles/wadatahttpparser.dir/C/he_stack.c.o: ../C/he_stack.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/heboyce/Desktop/MyCodeLibrary/Algorithm/C/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building C object CMakeFiles/wadatahttpparser.dir/C/he_stack.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/wadatahttpparser.dir/C/he_stack.c.o   -c /Users/heboyce/Desktop/MyCodeLibrary/Algorithm/C/C/he_stack.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/boyce/Project/Code/MyCodeLibrary/Algorithm/C/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building C object CMakeFiles/wadatahttpparser.dir/C/he_stack.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/wadatahttpparser.dir/C/he_stack.c.o   -c /home/boyce/Project/Code/MyCodeLibrary/Algorithm/C/C/he_stack.c
 
 CMakeFiles/wadatahttpparser.dir/C/he_stack.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/wadatahttpparser.dir/C/he_stack.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/heboyce/Desktop/MyCodeLibrary/Algorithm/C/C/he_stack.c > CMakeFiles/wadatahttpparser.dir/C/he_stack.c.i
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/boyce/Project/Code/MyCodeLibrary/Algorithm/C/C/he_stack.c > CMakeFiles/wadatahttpparser.dir/C/he_stack.c.i
 
 CMakeFiles/wadatahttpparser.dir/C/he_stack.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/wadatahttpparser.dir/C/he_stack.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/heboyce/Desktop/MyCodeLibrary/Algorithm/C/C/he_stack.c -o CMakeFiles/wadatahttpparser.dir/C/he_stack.c.s
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/boyce/Project/Code/MyCodeLibrary/Algorithm/C/C/he_stack.c -o CMakeFiles/wadatahttpparser.dir/C/he_stack.c.s
 
 CMakeFiles/wadatahttpparser.dir/C/he_tree.c.o: CMakeFiles/wadatahttpparser.dir/flags.make
 CMakeFiles/wadatahttpparser.dir/C/he_tree.c.o: ../C/he_tree.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/heboyce/Desktop/MyCodeLibrary/Algorithm/C/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building C object CMakeFiles/wadatahttpparser.dir/C/he_tree.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/wadatahttpparser.dir/C/he_tree.c.o   -c /Users/heboyce/Desktop/MyCodeLibrary/Algorithm/C/C/he_tree.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/boyce/Project/Code/MyCodeLibrary/Algorithm/C/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building C object CMakeFiles/wadatahttpparser.dir/C/he_tree.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/wadatahttpparser.dir/C/he_tree.c.o   -c /home/boyce/Project/Code/MyCodeLibrary/Algorithm/C/C/he_tree.c
 
 CMakeFiles/wadatahttpparser.dir/C/he_tree.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/wadatahttpparser.dir/C/he_tree.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/heboyce/Desktop/MyCodeLibrary/Algorithm/C/C/he_tree.c > CMakeFiles/wadatahttpparser.dir/C/he_tree.c.i
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/boyce/Project/Code/MyCodeLibrary/Algorithm/C/C/he_tree.c > CMakeFiles/wadatahttpparser.dir/C/he_tree.c.i
 
 CMakeFiles/wadatahttpparser.dir/C/he_tree.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/wadatahttpparser.dir/C/he_tree.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/heboyce/Desktop/MyCodeLibrary/Algorithm/C/C/he_tree.c -o CMakeFiles/wadatahttpparser.dir/C/he_tree.c.s
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/boyce/Project/Code/MyCodeLibrary/Algorithm/C/C/he_tree.c -o CMakeFiles/wadatahttpparser.dir/C/he_tree.c.s
 
 CMakeFiles/wadatahttpparser.dir/C/main.c.o: CMakeFiles/wadatahttpparser.dir/flags.make
 CMakeFiles/wadatahttpparser.dir/C/main.c.o: ../C/main.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/heboyce/Desktop/MyCodeLibrary/Algorithm/C/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building C object CMakeFiles/wadatahttpparser.dir/C/main.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/wadatahttpparser.dir/C/main.c.o   -c /Users/heboyce/Desktop/MyCodeLibrary/Algorithm/C/C/main.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/boyce/Project/Code/MyCodeLibrary/Algorithm/C/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building C object CMakeFiles/wadatahttpparser.dir/C/main.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/wadatahttpparser.dir/C/main.c.o   -c /home/boyce/Project/Code/MyCodeLibrary/Algorithm/C/C/main.c
 
 CMakeFiles/wadatahttpparser.dir/C/main.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/wadatahttpparser.dir/C/main.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/heboyce/Desktop/MyCodeLibrary/Algorithm/C/C/main.c > CMakeFiles/wadatahttpparser.dir/C/main.c.i
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/boyce/Project/Code/MyCodeLibrary/Algorithm/C/C/main.c > CMakeFiles/wadatahttpparser.dir/C/main.c.i
 
 CMakeFiles/wadatahttpparser.dir/C/main.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/wadatahttpparser.dir/C/main.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/heboyce/Desktop/MyCodeLibrary/Algorithm/C/C/main.c -o CMakeFiles/wadatahttpparser.dir/C/main.c.s
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/boyce/Project/Code/MyCodeLibrary/Algorithm/C/C/main.c -o CMakeFiles/wadatahttpparser.dir/C/main.c.s
 
 # Object files for target wadatahttpparser
 wadatahttpparser_OBJECTS = \
@@ -185,7 +185,7 @@ libwadatahttpparser.a: CMakeFiles/wadatahttpparser.dir/C/he_tree.c.o
 libwadatahttpparser.a: CMakeFiles/wadatahttpparser.dir/C/main.c.o
 libwadatahttpparser.a: CMakeFiles/wadatahttpparser.dir/build.make
 libwadatahttpparser.a: CMakeFiles/wadatahttpparser.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/heboyce/Desktop/MyCodeLibrary/Algorithm/C/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Linking C static library libwadatahttpparser.a"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/boyce/Project/Code/MyCodeLibrary/Algorithm/C/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Linking C static library libwadatahttpparser.a"
 	$(CMAKE_COMMAND) -P CMakeFiles/wadatahttpparser.dir/cmake_clean_target.cmake
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/wadatahttpparser.dir/link.txt --verbose=$(VERBOSE)
 
@@ -199,6 +199,6 @@ CMakeFiles/wadatahttpparser.dir/clean:
 .PHONY : CMakeFiles/wadatahttpparser.dir/clean
 
 CMakeFiles/wadatahttpparser.dir/depend:
-	cd /Users/heboyce/Desktop/MyCodeLibrary/Algorithm/C/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/heboyce/Desktop/MyCodeLibrary/Algorithm/C /Users/heboyce/Desktop/MyCodeLibrary/Algorithm/C /Users/heboyce/Desktop/MyCodeLibrary/Algorithm/C/cmake-build-debug /Users/heboyce/Desktop/MyCodeLibrary/Algorithm/C/cmake-build-debug /Users/heboyce/Desktop/MyCodeLibrary/Algorithm/C/cmake-build-debug/CMakeFiles/wadatahttpparser.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/boyce/Project/Code/MyCodeLibrary/Algorithm/C/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/boyce/Project/Code/MyCodeLibrary/Algorithm/C /home/boyce/Project/Code/MyCodeLibrary/Algorithm/C /home/boyce/Project/Code/MyCodeLibrary/Algorithm/C/cmake-build-debug /home/boyce/Project/Code/MyCodeLibrary/Algorithm/C/cmake-build-debug /home/boyce/Project/Code/MyCodeLibrary/Algorithm/C/cmake-build-debug/CMakeFiles/wadatahttpparser.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/wadatahttpparser.dir/depend
 
