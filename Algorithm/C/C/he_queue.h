@@ -25,9 +25,9 @@ struct HEArrayQueue {
 
 HEArrayQueue* heCreateArrayQueue(int capacity);
 int heIsFullArrayQueue(HEArrayQueue *queue);
-int heAddArrayQueue(HEArrayQueue *queue,void *value);
+int heAddValueArrayQueue(HEArrayQueue *queue,void *value);
 int heIsEmptyArrayQueue(HEArrayQueue *queue);
-void* heDeleteArrayQueue(HEArrayQueue *queue);
+void* heDeleteValueArrayQueue(HEArrayQueue *queue);
 void heFreeArrayQueue(HEArrayQueue *queue);
 
 /*
@@ -36,9 +36,9 @@ void heFreeArrayQueue(HEArrayQueue *queue);
 
 
 HElinkedQueue* heCreateLinkedQueue(void);
-void heAddLinkedQueue(HElinkedQueue *queue,void *value);
+void heAddValueLinkedQueue(HElinkedQueue *queue,void *value);
 int heIsEmptyLinkedQueue(HElinkedQueue *queue);
-void* heDeleteLinkedQueue(HElinkedQueue *queue);
+void* heDeleteValueLinkedQueue(HElinkedQueue *queue);
 void heFreeLinkedQueue(HElinkedQueue *queue,heFreeNodeValueFunc func);
 
 #endif /* queue_h */

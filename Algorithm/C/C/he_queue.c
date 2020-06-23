@@ -23,7 +23,7 @@ int heIsFullArrayQueue(HEArrayQueue *queue){
     }
     return 0;
 }
-int heAddArrayQueue(HEArrayQueue *queue,void *value){
+int heAddValueArrayQueue(HEArrayQueue *queue,void *value){
     
    if ((queue->rear + 1)%queue->capacity == queue->front) {
         return 0;
@@ -40,7 +40,7 @@ int heIsEmptyArrayQueue(HEArrayQueue *queue){
     return 0;
 }
 
-void* heDeleteArrayQueue(HEArrayQueue *queue){
+void* heDeleteValueArrayQueue(HEArrayQueue *queue){
     if (queue->rear == queue->front) {
         return NULL;
     }
@@ -69,7 +69,7 @@ int heIsEmptyLinkedQueue(HElinkedQueue *queue){
     return 0;
 }
 
-void heAddLinkedQueue(HElinkedQueue *queue,void *value){
+void heAddValueLinkedQueue(HElinkedQueue *queue,void *value){
     HElinkedNode *node = (HElinkedNode *)malloc(sizeof(HElinkedNode));
     node->value = value;
     node->next = NULL;
@@ -84,7 +84,7 @@ void heAddLinkedQueue(HElinkedQueue *queue,void *value){
     }
 }
 
-void* heDeleteLinkedQueue(HElinkedQueue *queue){
+void* heDeleteValueLinkedQueue(HElinkedQueue *queue){
     HElinkedNode *frontNode = queue->front;
     queue->front = queue->front->next;
     void *value = frontNode->value;

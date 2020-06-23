@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include "he_tree.h"
+#include "he_queue.h"
 
 /*
  学习各种遍历的方法关键是要知道特性有那些，他们所应用的场景有哪些。一定要举出应用场景，负责学算法就只是为了应试。
@@ -47,11 +48,33 @@ void hePostOrderTraversal(HEBinTree *tree,heHandleValFunc func){
 
 //求深度
 int heDeptBinTree(HEBinTree *tree){
-    return 0;
+    if(tree == NULL) return 0;
+    int leftDep = heDeptBinTree(tree->leftTree);
+    int rightDep = heDeptBinTree(tree->rightTree);
+    if (leftDep > rightDep){
+        return leftDep+1;
+    }
+    return rightDep +1;
 }
 //求叶子节点
 void heLeafBinTreeNode(HEBinTree *tree,heHandleValFunc func){
-    return;
+
+    if (tree == NULL)  {
+        if (func != NULL) func(tree);
+        return;
+    }
+    HElinkedQueue *queue = heCreateLinkedQueue();
+    heAddValueLinkedQueue(queue,tree);
+    while (heIsEmptyLinkedQueue(queue) != 1){
+       HEBinTree *tmpTree = (HEBinTree *)heDeleteValueLinkedQueue(queue);
+       if (tmpTree->rightTree == NULL && tmpTree->leftTree == NULL && func != NULL){
+           func(tmpTree);
+           continue;
+       }
+       if (tmpTree->rightTree != NULL) heAddValueLinkedQueue(queue,tmpTree->rightTree);
+       if (tmpTree->leftTree != NULL) heAddValueLinkedQueue(queue,tmpTree->leftTree);
+    }
+    heFreeLinkedQueue(queue,NULL);
 }
 //转化为数组
 void **heBinTreeToArray(HEBinTree *tree,int *size){
