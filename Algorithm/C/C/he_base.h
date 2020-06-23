@@ -19,6 +19,7 @@ typedef enum HERelationalSymbols{
     HEGreaterThen = 1
 }HERelationalSymbols;
 
+typedef void (*heHandleValFunc)(void *val);
 //1代表相等，0代表不相等
 typedef int (*heEqulNodeFunc)(void *rVal,void *lVal);
 typedef void (*heFreeNodeValueFunc)(void *Val);
